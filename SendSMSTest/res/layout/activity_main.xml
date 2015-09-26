@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete the fields to send a sms"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ex: 1234567890"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/smsBody"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Write your sms here...." />
+
+    <Button
+        android:id="@+id/smsManager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send the sms by SmsManager" />
+
+    <Button
+        android:id="@+id/smsSIntent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send the sms by SENDTO" />
+
+    <Button
+        android:id="@+id/smsVIntent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send the sms by VIEW" />
+
+</LinearLayout>
